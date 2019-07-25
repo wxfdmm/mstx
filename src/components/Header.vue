@@ -29,9 +29,9 @@
     </div>
     <div class="bdyt">
         <ul class="maint">
-            <li><router-link to="">首页</router-link></li>
+            <li><router-link to="/">首页</router-link></li>
             <li><div  class="father1"  >
-                <router-link to="" >菜谱大全<img src="../../public/img/msj_menuarrow.gif"></router-link> 
+                <router-link to="details" >菜谱大全<img src="../../public/img/msj_menuarrow.gif"></router-link> 
              <div class="mians left1" >
                 <div>家常菜谱
                 <ul>
@@ -194,7 +194,6 @@ export default {
         .mians{
                 display:flex;
                 justify-content: space-around;
-                flex-wrap: wrap;
                 flex-wrap: wrap;
             width:990px;background-color:#fefefe;
             font-size: 15px;
