@@ -330,8 +330,8 @@
         </div>
     </div>
         <div class="m-div3">
-            <router-link class="oa" to="details">首页</router-link>
-            <router-link class="ta" to="#">1</router-link>
+            <router-link class="oa" to="#">上一页</router-link>
+            <router-link class="ta" to="details">1</router-link>
             <router-link class="ta" to="#">2</router-link>
             <router-link class="ta" to="#">3</router-link>
             <router-link class="ta" to="#">4</router-link>
@@ -460,7 +460,7 @@ export default {
       transition:all .2s linear;
     }
     .in{
-      height:200px;
+      height:300px;
       opacity:1;
     }   
     .fade>a{
@@ -496,24 +496,24 @@ export default {
     .h1{height:0px;overflow:hidden;}
     .tram{ transition:all .2s linear;}
     .m-div3 {
-        width:400px;
+        width:500px;
         margin:0 auto;
         display:flex;
         justify-content:space-between;
-        padding-bottom:50px;
+        padding-bottom:100px;
         font-size:25px;
     }
     .m-div3 .oa{
         padding:2px 18px;
         background:#ccc;
-        color:#0ff;
+        color:#0ab;
         font-weight:bold;
         line-height:30px;
     }
     .m-div3 .ta{
-        padding:2px 18px;
+        padding:2px 20px;
         background:#ccc;
-        color:#0ff;
+        color:#0ab;
         font-weight:bold;
         line-height:30px;
     }
