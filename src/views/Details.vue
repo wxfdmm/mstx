@@ -151,33 +151,211 @@
                     <router-link to="#">&lt;15分钟</router-link>
                     <router-link to="#">&lt;30分钟</router-link>
                     <router-link to="#">&lt;60分钟</router-link>
-                    <router-link to="#">&gt;60分钟</router-link>
+                    <router-link to="#">&lt;2小时</router-link>
+                    <router-link to="#">&lt;5小时</router-link>
+                    <router-link to="#">&lt;12小时</router-link>
+                    <router-link to="#">&lt;1天</router-link>
+                    <router-link to="#">&gt;1天</router-link>
                 </div>
                 
             </div>
         </div>
-        <div class="m-div2">
+        <div class="m-div2" @mouseenter="hover" @mouseleave="leave">
             <div class="c">
                 <img src="../../public/img/details/20.jpg"/>
-                <div class="c1 noe show">
+                <div class="c1" :class="hClass">
                     <h5>蚝油焖鸡翅</h5>
                     <span>1 评论 500 人气</span>
                 </div>
-                <div class="c2 noe">
+                <div class="c2" >
                     <p>10步 / 大概30分钟</p>
                     <p>焖 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/18.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>牛肉茴香水饺</h5>
+                    <span>1 评论 262 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>12步 / 大概15分钟</p>
+                    <p>煮 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/19.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>茴香鸡蛋素水饺</h5>
+                    <span>1 评论 414 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>10步 / 大概30分钟</p>
+                    <p>煮 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/17.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>大馅儿薄皮儿馅饼</h5>
+                    <span>16 评论 262 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概10分钟</p>
+                    <p>烙 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/16.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>砂锅牛腩</h5>
+                    <span>1 评论 280人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概90分钟</p>
+                    <p>炖 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/4.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>凉拌猪尾巴</h5>
+                    <span>1 评论 317 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>12步 / 大概数小时</p>
+                    <p>卤 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/10.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>蚝油焖鸡翅</h5>
+                    <span>1 评论 500 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>10步 / 大概30分钟</p>
+                    <p>焖 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/12.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>牛肉茴香水饺</h5>
+                    <span>1 评论 262 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>12步 / 大概15分钟</p>
+                    <p>煮 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/13.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>茴香鸡蛋素水饺</h5>
+                    <span>1 评论 414 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>10步 / 大概30分钟</p>
+                    <p>煮 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/5.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>大馅儿薄皮儿馅饼</h5>
+                    <span>16 评论 262 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概10分钟</p>
+                    <p>烙 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/6.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>砂锅牛腩</h5>
+                    <span>1 评论 280人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概90分钟</p>
+                    <p>炖 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/7.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>凉拌猪尾巴</h5>
+                    <span>1 评论 317 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>12步 / 大概数小时</p>
+                    <p>卤 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/18.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>茴香鸡蛋素水饺</h5>
+                    <span>1 评论 414 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>10步 / 大概30分钟</p>
+                    <p>煮 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/15.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>大馅儿薄皮儿馅饼</h5>
+                    <span>16 评论 262 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概10分钟</p>
+                    <p>烙 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/16.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>牛腩</h5>
+                    <span>1 评论 280人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概90分钟</p>
+                    <p>炖 / 家常味</p>
                 </div>
             </div>
         </div>
         </div>
     </div>
+        <div class="m-div3">
+            <router-link class="oa" to="details">首页</router-link>
+            <router-link class="ta" to="#">1</router-link>
+            <router-link class="ta" to="#">2</router-link>
+            <router-link class="ta" to="#">3</router-link>
+            <router-link class="ta" to="#">4</router-link>
+            <router-link class="ta" to="#">5</router-link>
+        </div>
     </div>
+    
 </template>
 <script>
 export default {
     data() {
         return {
-
+           hClass:{
+               h1:false,
+               tram:true
+           }
+        }
+    },
+    methods: {
+        hover(e){
+            this.hClass.h1=true
+        },
+        leave(e){
+            this.hClass.h1=false
         }
     },
     mounted() {
@@ -185,10 +363,6 @@ export default {
       $(e.target).next(".fade").toggleClass("in")
         .siblings(".fade").removeClass("in")
         );
-         $(".c").on("mouseover",".c",e=>
-       $(e.target).child(".c1").removeClass("show")
-         .child(".c2").addClass("show")
-         );
     },
 }
 </script>
@@ -264,9 +438,9 @@ export default {
 
      .m-div{
          display:flex;
-         justify-content:space-around;
+         justify-content:space-between;
      }
-     .m-div1{width:250px;border:1px solid #aaa;box-shadow:0px 5px 5px rgba(0,0,0,0.3);}
+     .m-div1{width:250px;height:200px;border:1px solid #aaa;box-shadow:0px 5px 5px rgba(0,0,0,0.3);}
      .title{
 			background:#fff; border:1px soild #aaa;
 			padding:3px; font-size:22px; 
@@ -307,14 +481,40 @@ export default {
         padding:10px 0;
         font-weight:bold;
     }
-    // 右侧食物布局
+    
     .m-div2{
-        
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        width:720px;
     }
-    .c{background:#ececec}
+    .m-div2 div+div{margin-bottom:30px;}
+    .c{background:#ececec;width:230px;height:300px;overflow:hidden;}
     .c1,.c2{margin:10px 20px;}
-    .c1 h5{font-weight:bold;margin-bottom:10px;}
-    .c2 p:first-child{margin-bottom:10px;}
-    .noe{height:0px;overflow:hidden;}
-    .show{height:60px;}
+    .c1 h5{font-weight:bold;padding-bottom:10px;}
+    .c2 p:first-child{margin-top:-10px;}
+    .h1{height:0px;overflow:hidden;}
+    .tram{ transition:all .2s linear;}
+    .m-div3 {
+        width:400px;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+        padding-bottom:50px;
+        font-size:25px;
+    }
+    .m-div3 .oa{
+        padding:2px 18px;
+        background:#ccc;
+        color:#0ff;
+        font-weight:bold;
+        line-height:30px;
+    }
+    .m-div3 .ta{
+        padding:2px 18px;
+        background:#ccc;
+        color:#0ff;
+        font-weight:bold;
+        line-height:30px;
+    }
     </style>
