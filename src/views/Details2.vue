@@ -162,7 +162,7 @@
         </div>
         <div class="m-div2" @mouseenter="hover" @mouseleave="leave">
             <div class="c">
-                <img src="../../public/img/details/20.jpg"/>
+                <img src="../../public/img/details/21.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>蚝油焖鸡翅</h5>
                     <span>1 评论 500 人气</span>
@@ -195,7 +195,7 @@
                 </div>
             </div>
             <div class="c">
-                <img src="../../public/img/details/17.jpg"/>
+                <img src="../../public/img/details/11.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>大馅儿薄皮儿馅饼</h5>
                     <span>16 评论 262 人气</span>
@@ -206,7 +206,7 @@
                 </div>
             </div>
             <div class="c">
-                <img src="../../public/img/details/16.jpg"/>
+                <img src="../../public/img/details/10.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>砂锅牛腩</h5>
                     <span>1 评论 280人气</span>
@@ -217,7 +217,7 @@
                 </div>
             </div>
             <div class="c">
-                <img src="../../public/img/details/4.jpg"/>
+                <img src="../../public/img/details/6.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>凉拌猪尾巴</h5>
                     <span>1 评论 317 人气</span>
@@ -228,7 +228,7 @@
                 </div>
             </div>
             <div class="c">
-                <img src="../../public/img/details/10.jpg"/>
+                <img src="../../public/img/details/15.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>蚝油焖鸡翅</h5>
                     <span>1 评论 500 人气</span>
@@ -250,7 +250,51 @@
                 </div>
             </div>
             <div class="c">
+                <img src="../../public/img/details/13.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>茴香鸡蛋素水饺</h5>
+                    <span>1 评论 414 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>10步 / 大概30分钟</p>
+                    <p>煮 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/5.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>大馅儿薄皮儿馅饼</h5>
+                    <span>16 评论 262 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概10分钟</p>
+                    <p>烙 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/6.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>砂锅牛腩</h5>
+                    <span>1 评论 280人气</span>
+                </div>
+                <div class="c2" >
+                    <p>11步 / 大概90分钟</p>
+                    <p>炖 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
                 <img src="../../public/img/details/7.jpg"/>
+                <div class="c1" :class="hClass">
+                    <h5>凉拌猪尾巴</h5>
+                    <span>1 评论 317 人气</span>
+                </div>
+                <div class="c2" >
+                    <p>12步 / 大概数小时</p>
+                    <p>卤 / 家常味</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../../public/img/details/18.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>茴香鸡蛋素水饺</h5>
                     <span>1 评论 414 人气</span>
@@ -274,50 +318,6 @@
             <div class="c">
                 <img src="../../public/img/details/16.jpg"/>
                 <div class="c1" :class="hClass">
-                    <h5>砂锅牛腩</h5>
-                    <span>1 评论 280人气</span>
-                </div>
-                <div class="c2" >
-                    <p>11步 / 大概90分钟</p>
-                    <p>炖 / 家常味</p>
-                </div>
-            </div>
-            <div class="c">
-                <img src="../../public/img/details/17.jpg"/>
-                <div class="c1" :class="hClass">
-                    <h5>凉拌猪尾巴</h5>
-                    <span>1 评论 317 人气</span>
-                </div>
-                <div class="c2" >
-                    <p>12步 / 大概数小时</p>
-                    <p>卤 / 家常味</p>
-                </div>
-            </div>
-            <div class="c">
-                <img src="../../public/img/details/21.jpg"/>
-                <div class="c1" :class="hClass">
-                    <h5>茴香鸡蛋素水饺</h5>
-                    <span>1 评论 414 人气</span>
-                </div>
-                <div class="c2" >
-                    <p>10步 / 大概30分钟</p>
-                    <p>煮 / 家常味</p>
-                </div>
-            </div>
-            <div class="c">
-                <img src="../../public/img/details/11.jpg"/>
-                <div class="c1" :class="hClass">
-                    <h5>大馅儿薄皮儿馅饼</h5>
-                    <span>16 评论 262 人气</span>
-                </div>
-                <div class="c2" >
-                    <p>11步 / 大概10分钟</p>
-                    <p>烙 / 家常味</p>
-                </div>
-            </div>
-            <div class="c">
-                <img src="../../public/img/details/10.jpg"/>
-                <div class="c1" :class="hClass">
                     <h5>牛腩</h5>
                     <span>1 评论 280人气</span>
                 </div>
@@ -330,16 +330,16 @@
         </div>
     </div>
         <div class="m-div3">
-            <router-link class="oa" to="#">上一页</router-link>
-            <router-link class="ta" to="#">1</router-link>
-            <router-link class="ta" to="details2">2</router-link>
+            <router-link class="oa" to="details">上一页</router-link>
+            <router-link class="ta" to="details">1</router-link>
+            <router-link class="ta" to="#">2</router-link>
             <router-link class="ta" to="details3">3</router-link>
             <router-link class="ta" to="#">4</router-link>
             <router-link class="ta" to="#">5</router-link>
             <router-link class="ta" to="#">6</router-link>
             <router-link class="ta" to="#">7</router-link>
             <router-link class="ta" to="#">8</router-link>
-            <router-link class="ta" to="details2">下一页</router-link>
+            <router-link class="ta" to="details3">下一页</router-link>
         </div>
     </div>
     

@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
  import Index from './views/Index'
  import Details from './views/Details'
-// import Products from './views/Products'
+ import Details2 from './views/Details2'
+ import Details3 from './views/Details3'
 // import Login from './views/Login'
 // import NotFound from './views/NotFound'
 //ES6
@@ -17,7 +18,8 @@ export default new Router({
     // { path: '/', component: Home, children:[
         { path:"/", component: Index },
         { path:"/details", component: Details },
-    //     { path:"products", component: Products },
+        { path:"/details2", component: Details2 },
+        { path:"/details3", component: Details3 },
     // ]},
     // { path: '/login', component: Login },
     // { path: '/*', component:NotFound }
