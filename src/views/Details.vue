@@ -162,6 +162,7 @@
         </div>
         <div class="m-div2" @mouseenter="hover" @mouseleave="leave">
             <div class="c">
+                <router-link to="product">
                 <img src="../../public/img/details/20.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>蚝油焖鸡翅</h5>
@@ -171,6 +172,7 @@
                     <p>10步 / 大概30分钟</p>
                     <p>焖 / 家常味</p>
                 </div>
+                </router-link>
             </div>
             <div class="c">
                 <img src="../../public/img/details/18.jpg"/>
@@ -494,6 +496,7 @@ export default {
     }
     .m-div2 div+div{margin-bottom:30px;}
     .c{background:#ececec;width:230px;height:300px;overflow:hidden;}
+    .c a{color:#000}
     .c1,.c2{margin:10px 20px;}
     .c1 h5{font-weight:bold;padding-bottom:10px;}
     .c2 p:first-child{margin-top:-10px;}
