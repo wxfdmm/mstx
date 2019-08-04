@@ -161,20 +161,20 @@
             </div>
         </div>
         <div class="m-div2" @mouseenter="hover" @mouseleave="leave">
-            <div class="c">
+            <div class="c" v-for="(lis,i) of list" :key="i">
                 <router-link to="product">
-                <img src="../../public/img/details/20.jpg"/>
+                <img :src="'http://127.0.0.1:3000/img/'+lis.pic"/>
                 <div class="c1" :class="hClass">
-                    <h5>蚝油焖鸡翅</h5>
-                    <span>1 评论 500 人气</span>
+                    <h5>{{lis.pname}}</h5>
+                    <span>{{lis.discuss}}</span>
                 </div>
                 <div class="c2" >
-                    <p>10步 / 大概30分钟</p>
-                    <p>焖 / 家常味</p>
+                    <p>{{lis.foot}}</p>
+                    <p>{{lis.math}}</p>
                 </div>
                 </router-link>
             </div>
-            <div class="c">
+            <!-- <div class="c">
                 <img src="../../public/img/details/18.jpg"/>
                 <div class="c1" :class="hClass">
                     <h5>牛肉茴香水饺</h5>
@@ -327,21 +327,12 @@
                     <p>11步 / 大概90分钟</p>
                     <p>炖 / 家常味</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         </div>
     </div>
         <div class="m-div3">
-            <router-link class="oa" to="#">上一页</router-link>
-            <router-link class="ta" to="#">1</router-link>
-            <router-link class="ta" to="details2">2</router-link>
-            <router-link class="ta" to="details3">3</router-link>
-            <router-link class="ta" to="#">4</router-link>
-            <router-link class="ta" to="#">5</router-link>
-            <router-link class="ta" to="#">6</router-link>
-            <router-link class="ta" to="#">7</router-link>
-            <router-link class="ta" to="#">8</router-link>
-            <router-link class="ta" to="details2">下一页</router-link>
+            <button class="btn" @click="loadMore" :disabled="isDisable">加载更多</button>
         </div>
     </div>
     
@@ -353,7 +344,10 @@ export default {
            hClass:{
                h1:false,
                tram:true
-           }
+           },
+           list:[],
+           pno:0,
+           isDisable:false
         }
     },
     methods: {
@@ -362,6 +356,21 @@ export default {
         },
         leave(e){
             this.hClass.h1=false
+        },
+        loadMore(){//加载更多数据
+          var url="product";
+          
+          this.pno++;
+           var obj={pno:this.pno};
+          this.axios.get(url,{params:obj}).then(result=>{
+              console.log(result);
+              
+              this.list=this.list.concat(result.data);
+              if(this.list.length==48){
+                  this.isDisable=true
+              }
+              console.log(this.list)
+          })
         }
     },
     mounted() {
@@ -369,6 +378,9 @@ export default {
       $(e.target).next(".fade").toggleClass("in")
         .siblings(".fade").removeClass("in")
         );
+    },
+    created() {
+        this.loadMore()
     },
 }
 </script>
@@ -469,6 +481,7 @@ export default {
       height:300px;
       opacity:1;
     }   
+    
     .fade>a{
         text-align:center;
         margin-right:10px;
@@ -510,18 +523,12 @@ export default {
         padding-bottom:100px;
         font-size:25px;
     }
-    .m-div3 .oa{
-        padding:2px 18px;
-        background:#ccc;
-        color:#0ab;
-        font-weight:bold;
-        line-height:30px;
-    }
-    .m-div3 .ta{
-        padding:2px 20px;
-        background:#ccc;
-        color:#0ab;
-        font-weight:bold;
-        line-height:30px;
+    .m-div3>.btn{
+        margin:0 auto;
+        width:990px;
+        height:50px;
+        background-color:#05e3ed;
+        text-align: center;
+        font-size: 30px
     }
     </style>
